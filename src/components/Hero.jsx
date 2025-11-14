@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import whiteLogo from "../assets/ghibli_logo_white.png";
-import blackLogo from "../assets/ghibli_logo_black.png";
+
 
 const navigation = [
   { name: "About", href: "#about" },
@@ -24,13 +23,8 @@ export default function Hero() {
           {/* Logo */}
           <div className="flex lg:flex-1">
             <a href="#hero" className="-m-1.5 p-1.5">
-              <span className="sr-only">GhibliGaze</span>
-              <img
-                className="h-10 w-auto"
-                src={whiteLogo}
-                alt="Ghibli Studio Logo"
-                loading="lazy"
-              />
+              <span className="sr-only">Ghibli Art</span>
+              
             </a>
           </div>
 
@@ -72,13 +66,8 @@ export default function Hero() {
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-stone-100 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#hero" className="-m-1.5 p-1.5">
-                <span className="sr-only">GhibliGaze</span>
-                <img
-                  className="h-10 w-auto"
-                  src={blackLogo}
-                  alt="Ghibli Studio Logo"
-                  loading="lazy"
-                />
+                <span className="sr-only">Ghibli Art</span>
+               
               </a>
               <button
                 type="button"
@@ -110,20 +99,12 @@ export default function Hero() {
 
       {/* Content */}
       <main className="relative">
-        {/* Video Background */}
-        <video
+        {/* Image Background */}
+        <img
+          src="/images/preview.JPG"
+          alt="Ghibli Art Preview"
           className="absolute top-0 left-0 w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source
-            src="https://cdn.artstation.com/p/video_sources/000/146/133/2k.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
+        />
 
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-100"></div>
@@ -131,19 +112,18 @@ export default function Hero() {
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
             <h1 className="font-oregano text-7xl md:text-8xl lg:text-9xl text-white font-extrabold mb-5">
-              Gaze On{" "}
               <strong className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4e6a3a] to-[#618548]">
-                GhibliGaze
+                Ghibli Art
               </strong>
             </h1>
             <p className="text-stone-100 text-lg max-w-lg">
-              Celebrate the magic of Studio Ghibli with GhibliGaze – a
+              Celebrate the magic of Studio Ghibli with Ghibli Art – a
               mesmerizing adventure awaits. Immerse yourself in enchanting
               landscapes and captivating characters, as each frame unfolds a
               spellbinding tale.
             </p>
             <p className="text-stone-100 text-lg max-w-lg mt-5">
-              Join us in the enchantment of GhibliGaze and experience the
+              Join us in the enchantment of Ghibli Art and experience the
               extraordinary world of Studio Ghibli like never before.
             </p>
             <div className="mt-8 flex items-center gap-4 text-center">

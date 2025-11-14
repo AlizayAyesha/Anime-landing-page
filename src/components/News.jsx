@@ -41,7 +41,7 @@ const articles = {
       category: "ANNOUNCEMENTS",
       title: "The Critically Acclaimed Hit Series “ARCANE”",
       time: "10 June",
-      author: "GhibliGaze",
+      author: "Ghibli Art",
       authorLink: "#",
       image: pic4,
     },
@@ -49,7 +49,7 @@ const articles = {
       category: "ACQUISITION",
       title: "Theatrical & Home Entertainment Rights to “DAN DA DAN”",
       time: "4 Jun",
-      author: "GhibliGaze",
+      author: "Ghibli Art",
       authorLink: "#",
       image: pic5,
     },
@@ -57,7 +57,7 @@ const articles = {
       category: "HOME VIDEO",
       title: "Director Mamoru Oshii’s Seminal Classic “ANGEL’S EGG",
       time: "29 MAY",
-      author: "GhibliGaze",
+      author: "Ghibli Art",
       authorLink: "#",
       image: pic6,
     },
@@ -67,7 +67,7 @@ const articles = {
       category: "ANNOUNCEMENTS",
       title: "GKIDS Acquires North American Rights to “Mars Express”",
       time: "26 Oct",
-      author: "GhibliGaze",
+      author: "Ghibli Art",
       authorLink: "#",
       image: pic1,
     },
@@ -75,7 +75,7 @@ const articles = {
       category: "THEATRICAL",
       title: "GKIDS to Release “Blue Giant” In Select Theaters Nationwide",
       time: "13 Sep",
-      author: "GhibliGaze",
+      author: "Ghibli Art",
       authorLink: "#",
       image: pic2,
     },
@@ -83,7 +83,7 @@ const articles = {
       category: "HOME VIDEO",
       title: "GKIDS To Release EVANGELION:3.0+1.11 THRICE UPON A TIME",
       time: "31 July",
-      author: "GhibliGaze",
+      author: "Ghibli Art",
       authorLink: "#",
       image: pic3,
     },
@@ -111,21 +111,21 @@ export default function News() {
                 category="BEHIND THE SCENES"
                 title="The Bright Future of Studio Ghibli: A New Beginning Under Nippon TV"
                 time="2 months ago"
-                author="GhibliGaze"
+                author="Ghibli Art"
                 authorLink="#"
               />
               <Article
                 category="MOVIES"
                 title="A New Venture Beyond “The Boy and the Heron”"
                 time="3 months ago"
-                author="GhibliGaze"
+                author="Ghibli Art"
                 authorLink="#"
               />
               <Article
                 category="COOL GHIBLI STUFF"
                 title="Don’t Miss: Studio Ghibli x UNIQLO’s New Must-Have Collab!"
                 time="3 months ago"
-                author="GhibliGaze"
+                author="Ghibli Art"
                 authorLink="#"
               />
             </div>

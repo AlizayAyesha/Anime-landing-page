@@ -4,7 +4,7 @@ import {
   IoLogoDribbble,
   IoLogoInstagram,
 } from "react-icons/io5";
-import Logo from "../assets/ghibli_logo_black.png";
+
 
 export default function Footer() {
   return (
@@ -13,13 +13,13 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="/" className="flex items-center">
-              <img src={Logo} className="h-8 me-3" alt="Ghibli Studio Logo" />
+              <span className="text-lg font-bold text-gray-900">Ghibli Art</span>
             </a>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
               <h2 className="mb-6 text-sm font-semibold font-oregano text-gray-900 uppercase">
-                GhibliGaze
+                Ghibli Art
               </h2>
               <ul className="text-gray-500 font-medium">
                 <li className="mb-2">
@@ -101,7 +101,15 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
           <span className="text-sm text-gray-500 text-center sm:text-left">
-            &copy; {new Date().getFullYear()} GhibliGaze.
+            &copy; {new Date().getFullYear()} Ghibli Art. Made with ♡︎ by{" "}
+            <a
+              href="https://github.com/AlizayAyesha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-[#618548]"
+            >
+              Alizay Ayesha
+            </a>
           </span>
           <div className="flex justify-center mt-4 sm:mt-0">
             <a

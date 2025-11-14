@@ -14,18 +14,56 @@ export default function Trailers() {
   useEffect(() => {
     const fetchTrailers = async () => {
       try {
-        const response = await axios.get(
-          `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=12&playlistId=${PLAYLIST_ID}&key=${API_KEY}`
-        );
-        const trailerData = response.data.items.map((item) => ({
-          id: item.snippet.resourceId.videoId,
-          thumbnail:
-            item.snippet.thumbnails.maxres?.url ||
-            item.snippet.thumbnails.high.url,
-        }));
-        setTrailers(trailerData);
+        if (API_KEY) {
+          const response = await axios.get(
+            `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=12&playlistId=${PLAYLIST_ID}&key=${API_KEY}`
+          );
+          const trailerData = response.data.items.map((item) => ({
+            id: item.snippet.resourceId.videoId,
+            thumbnail:
+              item.snippet.thumbnails.maxres?.url ||
+              item.snippet.thumbnails.high.url,
+          }));
+          setTrailers(trailerData);
+        } else {
+          // Fallback to public trailers
+          setTrailers([
+            {
+              id: "x7uLutVRBfI", // Ghibli trailer
+              thumbnail: "https://img.youtube.com/vi/x7uLutVRBfI/maxresdefault.jpg",
+            },
+            {
+            id: "kCUrfsbPLjc", // Spirited Away
+            thumbnail: "https://img.youtube.com/vi/kCUrfsbPLjc/maxresdefault.jpg",
+          },
+          {
+            id: "yfeCCnOPqrA", // Howl's Moving Castle
+            thumbnail: "https://img.youtube.com/vi/yfeCCnOPqrA/maxresdefault.jpg",
+          },
+          {
+            id: "a8p-l75icsA", // Princess Mononoke
+            thumbnail: "https://img.youtube.com/vi/a8p-l75icsA/maxresdefault.jpg",
+          },
+           
+          ]);
+        }
       } catch (error) {
         console.error("Error fetching trailers", error);
+        // Fallback on error
+        setTrailers([
+          {
+            id: "kCUrfsbPLjc", // Spirited Away
+            thumbnail: "https://img.youtube.com/vi/kCUrfsbPLjc/maxresdefault.jpg",
+          },
+          {
+            id: "rTcdsOqzqYw", // Howl's Moving Castle
+            thumbnail: "https://img.youtube.com/vi/rTcdsOqzqYw/maxresdefault.jpg",
+          },
+          {
+            id: "a8p-l75icsA", // Princess Mononoke
+            thumbnail: "https://img.youtube.com/vi/a8p-l75icsA/maxresdefault.jpg",
+          },
+        ]);
       }
     };
 
