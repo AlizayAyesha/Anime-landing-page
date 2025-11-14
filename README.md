@@ -1,8 +1,8 @@
-# GhibliGaze
+# Ghibli Art
 
 ## Overview
 
-GhibliGaze is a single-page application dedicated to celebrating the extraordinary creations of Studio Ghibli. The page showcases information about Ghibli's iconic movies, captivating trailers, a visually stunning gallery, and the latest news from the Ghibli universe.
+Ghibli Art is a single-page application dedicated to celebrating the extraordinary creations of Studio Ghibli. The page showcases information about Ghibli's iconic movies, captivating trailers, a visually stunning gallery, and the latest news from the Ghibli universe.
 
 
 
@@ -23,7 +23,7 @@ GhibliGaze is a single-page application dedicated to celebrating the extraordina
 2. **Navigate to the Project Directory:**
 
    ```bash
-   cd GhibliGaze
+   cd Ghibli-Art
    ```
 
 3. **Install Dependencies:**
@@ -49,10 +49,7 @@ GhibliGaze is a single-page application dedicated to celebrating the extraordina
    ```
    > This will start the development server, and you can view the landing page at `http://localhost:5173` in your browser.
 
-## Credits
-
-- The anime posters in the Movies section were found and used from the Behance project _Posters : Studio Ghibli_ of [Joseph K. Roman](https://www.behance.net/josephroman).
-
 ## License
 
 This project is licensed under the MIT License.
+# Anime-landing-page
